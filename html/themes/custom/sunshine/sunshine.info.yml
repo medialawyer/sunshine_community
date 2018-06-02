@@ -1,0 +1,120 @@
+name: Sunshine Community theme
+description: Theme for SPJ Sunshine Community.
+screenshot: screenshot.png
+type: theme
+
+base theme: socialbase
+
+core: 8.x
+version: '1.1'
+
+libraries:
+  - sunshine/brand
+  - sunshine/site-footer
+
+libraries-extend:
+  socialbase/base:
+    - sunshine/base
+  socialbase/alert:
+    - sunshine/alert
+  socialbase/badge:
+    - sunshine/badge
+  socialbase/button:
+    - sunshine/button
+  socialbase/cards:
+    - sunshine/cards
+  socialbase/form-controls:
+    - sunshine/form-controls
+  socialbase/list:
+    - sunshine/list
+  socialbase/spinner:
+    - sunshine/spinner
+  # Extend molecules
+  socialbase/breadcrumb:
+    - sunshine/breadcrumb
+  socialbase/dropdown:
+    - sunshine/dropdown
+  socialbase/file:
+      - sunshine/file
+  socialbase/form-elements:
+    - sunshine/form-elements
+  socialbase/form--input-groups:
+    - sunshine/form--input-groups
+  socialbase/like:
+    - sunshine/like
+  # attach the datepicker stylesheet to all date fields
+  core/drupal.date:
+    - sunshine/form--datepicker
+  # extend the core datepicker with a stylesheet
+  core/jquery.ui.datepicker:
+    - sunshine/form--timepicker
+  socialbase/form--password:
+    - sunshine/form--password
+  socialbase/pagination:
+    - sunshine/pagination
+  socialbase/popover:
+    - sunshine/popover
+  socialbase/nav-book:
+    - sunshine/nav-book
+  socialbase/nav-tabs:
+    - sunshine/nav-tabs
+  socialbase/navbar:
+    - sunshine/navbar
+  socialbase/teaser:
+    - sunshine/teaser
+  socialbase/tour:
+    - sunshine/tour
+  # Extend Organisms
+  socialbase/comment:
+    - sunshine/comment
+  socialbase/hero:
+    - sunshine/hero
+  socialbase/meta:
+    - sunshine/meta
+  socialbase/offcanvas:
+    - sunshine/offcanvas
+  socialbase/stream:
+    - sunshine/stream
+  socialbase/page-node:
+    - sunshine/page-node
+
+ckeditor_stylesheets:
+  - assets/css/ckeditor.css
+
+# This section is used by the contrib module, Component Libraries. It allows you
+# to reference .twig files in your components/ directory.
+component-libraries:
+  base:
+    paths:
+      - components/01-base
+  atoms:
+    paths:
+      - components/02-atoms
+  molecules:
+    paths:
+      - components/03-molecules
+  organisms:
+    paths:
+      - components/04-organisms
+  templates:
+    paths:
+      - components/05-templates
+  pages:
+    paths:
+      - components/06-pages
+
+regions:
+  hidden: Hidden
+  header: Header
+  breadcrumb: Breadcrumb
+  hero: Hero
+  secondary_navigation: Secondary navigation
+  content_top: Content top
+  title: Page title
+  content: Content
+  complementary_top: Complementary top
+  complementary_bottom: Complementary bottom
+  content_bottom: Content bottom
+  sidebar_first: Sidebar First
+  sidebar_second: Sidebar Second
+  footer: Footer

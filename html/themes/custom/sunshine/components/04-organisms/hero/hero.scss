@@ -1,0 +1,72 @@
+@import "settings";
+
+// Used on a hero block that can hold a background image.
+.cover {
+  color: white;
+  background-color: $brand-primary;
+    width: 100%;
+    height: calc(100vw * 0.38);
+    min-width: 480px;
+    max-height: 423px;
+    min-height: 168px;
+}
+
+.cover-wrap {
+  height: calc(100vw * 0.36);
+  max-height: 430px;
+  min-height: 171px;
+}
+
+.page-title {
+	color: white;
+	background-color: rgba($gray-light, 0.3);
+}
+
+.hero-avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+
+  @include for-tablet-portrait-up {
+  }
+
+}
+
+.hero-canvas {
+  position: absolute;
+  right: -15px;
+  bottom: 60px;
+  border-radius: $border-radius-base;
+  background-color: rgba($gray-dark, 0.8);
+  color: white;
+  font-size: 1.5rem; // Might need adjusting
+  width: 180px;
+  height: 140px;
+  padding: 5px;
+}
+
+.hero-form[role='search'] {
+
+  .form-control {
+    border-radius: $input-border-radius;
+
+    &:focus,
+    &:active,
+    &:focus ~ .search-icon,
+    &:active ~ .search-icon {
+      border-bottom: 1px solid $brand-secondary;
+      box-shadow: 0 2px 0 0 $brand-secondary;
+    }
+
+  }
+
+  .form-submit,
+  .search-icon {
+    border-radius: 0 $input-border-radius $input-border-radius 0;
+  }
+
+  .search-icon {
+    fill: $brand-primary;
+    background: white;
+  }
+
+}

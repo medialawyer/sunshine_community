@@ -1,0 +1,59 @@
+.cover {
+  color: white;
+  background-color: #29abe2;
+  width: 100%;
+  height: calc(100vw * 0.38);
+  min-width: 480px;
+  max-height: 423px;
+  min-height: 168px;
+}
+
+.cover-wrap {
+  height: calc(100vw * 0.36);
+  max-height: 430px;
+  min-height: 171px;
+}
+
+.page-title {
+  color: white;
+  background-color: rgba(119, 119, 119, 0.3);
+}
+
+.hero-avatar {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.hero-canvas {
+  position: absolute;
+  right: -15px;
+  bottom: 60px;
+  border-radius: 10px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: white;
+  font-size: 1.5rem;
+  width: 180px;
+  height: 140px;
+  padding: 5px;
+}
+
+.hero-form[role='search'] .form-control {
+  border-radius: 5px;
+}
+
+.hero-form[role='search'] .form-control:focus, .hero-form[role='search'] .form-control:active,
+.hero-form[role='search'] .form-control:focus ~ .search-icon,
+.hero-form[role='search'] .form-control:active ~ .search-icon {
+  border-bottom: 1px solid #1f80aa;
+  box-shadow: 0 2px 0 0 #1f80aa;
+}
+
+.hero-form[role='search'] .form-submit,
+.hero-form[role='search'] .search-icon {
+  border-radius: 0 5px 5px 0;
+}
+
+.hero-form[role='search'] .search-icon {
+  fill: #29abe2;
+  background: white;
+}

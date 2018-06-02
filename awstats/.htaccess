@@ -1,0 +1,4 @@
+AuthName "sunshine.spjnetwork.org statistics"
+AuthType Basic
+AuthUserFile /home/sunshine/.awstats-htpasswd
+require valid-user
